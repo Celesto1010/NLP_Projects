@@ -1,0 +1,599 @@
+nohup: ignoring input
+2020-08-07 16:03:16,351 - datasets.py[line:97] - INFO: Writing example 0 of 100000
+2020-08-07 16:03:16,351 - datasets.py[line:83] - INFO: *** Example ***
+2020-08-07 16:03:16,351 - datasets.py[line:84] - INFO: guid: train-1
+2020-08-07 16:03:16,351 - datasets.py[line:85] - INFO: en_input_ids: 8177 161 7917 7953 2568 3757 1117 81 1391 346 1 98 36 15 2434 5035 55 7967 8178
+2020-08-07 16:03:16,351 - datasets.py[line:87] - INFO: zh_input_ids: 4891 45 116 1731 390 138 5 103 2 640 230 22 24 78 865 600 9 146 3 4892
+2020-08-07 16:03:16,352 - datasets.py[line:83] - INFO: *** Example ***
+2020-08-07 16:03:16,352 - datasets.py[line:84] - INFO: guid: train-2
+2020-08-07 16:03:16,352 - datasets.py[line:85] - INFO: en_input_ids: 8177 87 1233 5377 2289 28 7 1115 8 2604 48 841 4105 443 76 844 4920 7967 8178
+2020-08-07 16:03:16,352 - datasets.py[line:87] - INFO: zh_input_ids: 4891 162 276 23 624 1837 1019 347 68 7 30 763 545 35 424 1505 807 1 223 722 248 27 11 18 452 329 3 4892
+2020-08-07 16:03:16,352 - datasets.py[line:83] - INFO: *** Example ***
+2020-08-07 16:03:16,352 - datasets.py[line:84] - INFO: guid: train-3
+2020-08-07 16:03:16,352 - datasets.py[line:85] - INFO: en_input_ids: 8177 4008 7996 5803 7990 8010 13 16 887 4 3655 1391 2934 544 137 6926 76 62 75 819 5 2 1333 7967 8178
+2020-08-07 16:03:16,352 - datasets.py[line:87] - INFO: zh_input_ids: 4891 560 180 59 13 483 18 52 166 135 18 59 12 300 27 284 128 367 216 248 88 17 124 186 144 625 8 44 201 3 4892
+2020-08-07 16:03:16,352 - datasets.py[line:83] - INFO: *** Example ***
+2020-08-07 16:03:16,352 - datasets.py[line:84] - INFO: guid: train-4
+2020-08-07 16:03:16,352 - datasets.py[line:85] - INFO: en_input_ids: 8177 44 155 118 1 4757 629 25 50 1280 7045 79 4081 4 5113 4021 25 50 3605 8021 79 5 2572 4 112 25 50 4917 1288 26 5 525 421 3753 28 12 767 2908 28 32 6924 6870 7967 8178
+2020-08-07 16:03:16,352 - datasets.py[line:87] - INFO: zh_input_ids: 4891 284 4 108 848 408 524 416 862 37 2 118 1119 14 787 269 147 54 2 166 674 12 70 15 329 251 122 215 544 37 31 175 1801 1177 200 904 125 3 4892
+2020-08-07 16:03:16,353 - datasets.py[line:83] - INFO: *** Example ***
+2020-08-07 16:03:16,353 - datasets.py[line:84] - INFO: guid: train-5
+2020-08-07 16:03:16,353 - datasets.py[line:85] - INFO: en_input_ids: 8177 5207 7953 29 1226 33 6910 1 102 23 1794 53 50 5221 528 529 304 1217 7966 845 4939 3085 1344 611 7967 8178
+2020-08-07 16:03:16,353 - datasets.py[line:87] - INFO: zh_input_ids: 4891 16 4 82 182 11 158 81 72 94 57 51 2 71 270 171 31 241 231 1033 314 156 51 152 845 470 3 4892
+2020-08-07 16:03:18,732 - datasets.py[line:97] - INFO: Writing example 10000 of 100000
+2020-08-07 16:03:21,131 - datasets.py[line:97] - INFO: Writing example 20000 of 100000
+2020-08-07 16:03:23,227 - datasets.py[line:97] - INFO: Writing example 30000 of 100000
+2020-08-07 16:03:25,630 - datasets.py[line:97] - INFO: Writing example 40000 of 100000
+2020-08-07 16:03:27,712 - datasets.py[line:97] - INFO: Writing example 50000 of 100000
+2020-08-07 16:03:30,177 - datasets.py[line:97] - INFO: Writing example 60000 of 100000
+2020-08-07 16:03:32,254 - datasets.py[line:97] - INFO: Writing example 70000 of 100000
+2020-08-07 16:03:34,832 - datasets.py[line:97] - INFO: Writing example 80000 of 100000
+2020-08-07 16:03:36,897 - datasets.py[line:97] - INFO: Writing example 90000 of 100000
+2020-08-07 16:03:38,946 - datasets.py[line:104] - INFO: Writing example Done. Total examples written: 48000
+2020-08-07 16:03:39,028 - run_translator.py[line:223] - INFO: ***** Running training *****
+2020-08-07 16:03:39,028 - run_translator.py[line:224] - INFO:   Num examples = 48000
+2020-08-07 16:03:39,028 - run_translator.py[line:225] - INFO:   Total training steps: 200000
+2020-08-07 16:03:39,030 - run_translator.py[line:170] - INFO:  *** Train from the beginning. *** 
+2020-08-07 16:03:39,032 - run_translator.py[line:58] - INFO:  *** start training, parameter total:15663133, trainable:15663133 *** 
+/alidata1/yscheng/anaconda3/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:865: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  "please use `get_last_lr()`.", UserWarning)
+2020-08-07 16:03:39,625 - run_translator.py[line:93] - INFO: [ Epoch 1: 1/1920 ]
+2020-08-07 16:03:39,625 - run_translator.py[line:98] - INFO:   avg_loss: 5.465043544769287, acc: 0.001, avg_lr: 1e-06, 0.593s
+2020-08-07 16:07:16,953 - run_translator.py[line:93] - INFO: [ Epoch 1: 500/1920 ]
+2020-08-07 16:07:16,953 - run_translator.py[line:98] - INFO:   avg_loss: 5.497440056800842, acc: 0.032, avg_lr: 2e-06, 217.328s
+2020-08-07 16:10:55,734 - run_translator.py[line:93] - INFO: [ Epoch 1: 1000/1920 ]
+2020-08-07 16:10:55,734 - run_translator.py[line:98] - INFO:   avg_loss: 5.326563499927521, acc: 0.054, avg_lr: 2e-06, 218.781s
+2020-08-07 16:14:28,387 - run_translator.py[line:93] - INFO: [ Epoch 1: 1500/1920 ]
+2020-08-07 16:14:28,388 - run_translator.py[line:98] - INFO:   avg_loss: 5.16505542866389, acc: 0.055, avg_lr: 3e-06, 212.654s
+2020-08-07 16:17:27,702 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 1, average loss: 5.030275546386838, average acc: 0.04366642346105399 *** 
+
+2020-08-07 16:17:28,277 - run_translator.py[line:93] - INFO: [ Epoch 2: 1/1920 ]
+2020-08-07 16:17:28,277 - run_translator.py[line:98] - INFO:   avg_loss: 4.579656600952148, acc: 0.061, avg_lr: 3e-06, 0.396s
+2020-08-07 16:20:57,364 - run_translator.py[line:93] - INFO: [ Epoch 2: 500/1920 ]
+2020-08-07 16:20:57,364 - run_translator.py[line:98] - INFO:   avg_loss: 4.337884639263153, acc: 0.069, avg_lr: 4e-06, 209.087s
+2020-08-07 16:24:31,411 - run_translator.py[line:93] - INFO: [ Epoch 2: 1000/1920 ]
+2020-08-07 16:24:31,411 - run_translator.py[line:98] - INFO:   avg_loss: 4.255024310588837, acc: 0.068, avg_lr: 5e-06, 214.047s
+2020-08-07 16:28:05,791 - run_translator.py[line:93] - INFO: [ Epoch 2: 1500/1920 ]
+2020-08-07 16:28:05,791 - run_translator.py[line:98] - INFO:   avg_loss: 4.186967528502146, acc: 0.1, avg_lr: 5e-06, 214.381s
+2020-08-07 16:31:04,408 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 2, average loss: 4.12984147729973, average acc: 0.07672107393096997 *** 
+
+2020-08-07 16:31:04,967 - run_translator.py[line:93] - INFO: [ Epoch 3: 1/1920 ]
+2020-08-07 16:31:04,968 - run_translator.py[line:98] - INFO:   avg_loss: 4.04318904876709, acc: 0.101, avg_lr: 6e-06, 0.379s
+2020-08-07 16:34:36,836 - run_translator.py[line:93] - INFO: [ Epoch 3: 500/1920 ]
+2020-08-07 16:34:36,836 - run_translator.py[line:98] - INFO:   avg_loss: 3.8206402859687807, acc: 0.092, avg_lr: 6e-06, 211.868s
+2020-08-07 16:38:12,808 - run_translator.py[line:93] - INFO: [ Epoch 3: 1000/1920 ]
+2020-08-07 16:38:12,808 - run_translator.py[line:98] - INFO:   avg_loss: 3.7835728726387026, acc: 0.122, avg_lr: 7e-06, 215.972s
+2020-08-07 16:41:42,015 - run_translator.py[line:93] - INFO: [ Epoch 3: 1500/1920 ]
+2020-08-07 16:41:42,015 - run_translator.py[line:98] - INFO:   avg_loss: 3.7411906396547954, acc: 0.119, avg_lr: 8e-06, 209.207s
+2020-08-07 16:44:40,961 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 3, average loss: 3.705727983514468, average acc: 0.1180887391882876 *** 
+
+2020-08-07 16:44:41,560 - run_translator.py[line:93] - INFO: [ Epoch 4: 1/1920 ]
+2020-08-07 16:44:41,561 - run_translator.py[line:98] - INFO:   avg_loss: 3.7208640575408936, acc: 0.141, avg_lr: 8e-06, 0.42s
+2020-08-07 16:48:17,207 - run_translator.py[line:93] - INFO: [ Epoch 4: 500/1920 ]
+2020-08-07 16:48:17,207 - run_translator.py[line:98] - INFO:   avg_loss: 3.511842320919037, acc: 0.163, avg_lr: 9e-06, 215.646s
+2020-08-07 16:51:56,080 - run_translator.py[line:93] - INFO: [ Epoch 4: 1000/1920 ]
+2020-08-07 16:51:56,080 - run_translator.py[line:98] - INFO:   avg_loss: 3.479335598945618, acc: 0.133, avg_lr: 9e-06, 218.873s
+2020-08-07 16:55:27,490 - run_translator.py[line:93] - INFO: [ Epoch 4: 1500/1920 ]
+2020-08-07 16:55:27,491 - run_translator.py[line:98] - INFO:   avg_loss: 3.443501619021098, acc: 0.139, avg_lr: 1e-05, 211.411s
+2020-08-07 16:58:32,983 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 4, average loss: 3.418011008451382, average acc: 0.14803809329624915 *** 
+
+2020-08-07 16:58:33,566 - run_translator.py[line:93] - INFO: [ Epoch 5: 1/1920 ]
+2020-08-07 16:58:33,566 - run_translator.py[line:98] - INFO:   avg_loss: 3.350597858428955, acc: 0.159, avg_lr: 1.1e-05, 0.402s
+2020-08-07 17:02:03,770 - run_translator.py[line:93] - INFO: [ Epoch 5: 500/1920 ]
+2020-08-07 17:02:03,770 - run_translator.py[line:98] - INFO:   avg_loss: 3.2749553213119507, acc: 0.15, avg_lr: 1.1e-05, 210.204s
+2020-08-07 17:05:38,717 - run_translator.py[line:93] - INFO: [ Epoch 5: 1000/1920 ]
+2020-08-07 17:05:38,717 - run_translator.py[line:98] - INFO:   avg_loss: 3.2465405168533326, acc: 0.169, avg_lr: 1.2e-05, 214.947s
+2020-08-07 17:09:20,065 - run_translator.py[line:93] - INFO: [ Epoch 5: 1500/1920 ]
+2020-08-07 17:09:20,065 - run_translator.py[line:98] - INFO:   avg_loss: 3.22009331146876, acc: 0.181, avg_lr: 1.2e-05, 221.348s
+2020-08-07 17:12:21,299 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 5, average loss: 3.2033534863342843, average acc: 0.16957024114353833 *** 
+
+2020-08-07 17:12:21,867 - run_translator.py[line:93] - INFO: [ Epoch 6: 1/1920 ]
+2020-08-07 17:12:21,867 - run_translator.py[line:98] - INFO:   avg_loss: 2.9468977451324463, acc: 0.205, avg_lr: 1.3e-05, 0.389s
+2020-08-07 17:15:51,036 - run_translator.py[line:93] - INFO: [ Epoch 6: 500/1920 ]
+2020-08-07 17:15:51,036 - run_translator.py[line:98] - INFO:   avg_loss: 3.104816236972809, acc: 0.19, avg_lr: 1.3e-05, 209.169s
+2020-08-07 17:19:20,777 - run_translator.py[line:93] - INFO: [ Epoch 6: 1000/1920 ]
+2020-08-07 17:19:20,777 - run_translator.py[line:98] - INFO:   avg_loss: 3.072837707042694, acc: 0.226, avg_lr: 1.4e-05, 209.741s
+2020-08-07 17:23:01,008 - run_translator.py[line:93] - INFO: [ Epoch 6: 1500/1920 ]
+2020-08-07 17:23:01,009 - run_translator.py[line:98] - INFO:   avg_loss: 3.0501037524541217, acc: 0.199, avg_lr: 1.5e-05, 220.232s
+2020-08-07 17:25:57,055 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 6, average loss: 3.0348116057614485, average acc: 0.18566981343105574 *** 
+
+2020-08-07 17:25:57,756 - run_translator.py[line:93] - INFO: [ Epoch 7: 1/1920 ]
+2020-08-07 17:25:57,756 - run_translator.py[line:98] - INFO:   avg_loss: 2.947244644165039, acc: 0.195, avg_lr: 1.5e-05, 0.523s
+2020-08-07 17:29:32,532 - run_translator.py[line:93] - INFO: [ Epoch 7: 500/1920 ]
+2020-08-07 17:29:32,532 - run_translator.py[line:98] - INFO:   avg_loss: 2.948690019130707, acc: 0.194, avg_lr: 1.6e-05, 214.776s
+2020-08-07 17:33:02,098 - run_translator.py[line:93] - INFO: [ Epoch 7: 1000/1920 ]
+2020-08-07 17:33:02,098 - run_translator.py[line:98] - INFO:   avg_loss: 2.925355828046799, acc: 0.232, avg_lr: 1.6e-05, 209.565s
+2020-08-07 17:36:35,960 - run_translator.py[line:93] - INFO: [ Epoch 7: 1500/1920 ]
+2020-08-07 17:36:35,960 - run_translator.py[line:98] - INFO:   avg_loss: 2.9098984796206158, acc: 0.193, avg_lr: 1.7e-05, 213.863s
+2020-08-07 17:39:32,924 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 7, average loss: 2.8982824749002853, average acc: 0.1996706041985947 *** 
+
+2020-08-07 17:39:33,632 - run_translator.py[line:93] - INFO: [ Epoch 8: 1/1920 ]
+2020-08-07 17:39:33,633 - run_translator.py[line:98] - INFO:   avg_loss: 2.7718427181243896, acc: 0.21, avg_lr: 1.8e-05, 0.527s
+2020-08-07 17:43:01,564 - run_translator.py[line:93] - INFO: [ Epoch 8: 500/1920 ]
+2020-08-07 17:43:01,564 - run_translator.py[line:98] - INFO:   avg_loss: 2.7995844683647158, acc: 0.209, avg_lr: 1.8e-05, 207.931s
+2020-08-07 17:46:43,645 - run_translator.py[line:93] - INFO: [ Epoch 8: 1000/1920 ]
+2020-08-07 17:46:43,646 - run_translator.py[line:98] - INFO:   avg_loss: 2.7965393381118773, acc: 0.191, avg_lr: 1.9e-05, 222.082s
+2020-08-07 17:50:25,437 - run_translator.py[line:93] - INFO: [ Epoch 8: 1500/1920 ]
+2020-08-07 17:50:25,437 - run_translator.py[line:98] - INFO:   avg_loss: 2.788756511847178, acc: 0.212, avg_lr: 1.9e-05, 221.791s
+2020-08-07 17:53:27,731 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 8, average loss: 2.778337541346749, average acc: 0.21191029229651495 *** 
+
+2020-08-07 17:53:28,296 - run_translator.py[line:93] - INFO: [ Epoch 9: 1/1920 ]
+2020-08-07 17:53:28,296 - run_translator.py[line:98] - INFO:   avg_loss: 2.5844345092773438, acc: 0.233, avg_lr: 2e-05, 0.383s
+2020-08-07 17:57:09,148 - run_translator.py[line:93] - INFO: [ Epoch 9: 500/1920 ]
+2020-08-07 17:57:09,148 - run_translator.py[line:98] - INFO:   avg_loss: 2.7113823475837706, acc: 0.211, avg_lr: 2.1e-05, 220.853s
+2020-08-07 18:00:40,169 - run_translator.py[line:93] - INFO: [ Epoch 9: 1000/1920 ]
+2020-08-07 18:00:40,169 - run_translator.py[line:98] - INFO:   avg_loss: 2.703358199596405, acc: 0.193, avg_lr: 2.1e-05, 211.021s
+2020-08-07 18:04:18,534 - run_translator.py[line:93] - INFO: [ Epoch 9: 1500/1920 ]
+2020-08-07 18:04:18,535 - run_translator.py[line:98] - INFO:   avg_loss: 2.687531598250071, acc: 0.225, avg_lr: 2.2e-05, 218.365s
+2020-08-07 18:07:14,130 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 9, average loss: 2.677787780823807, average acc: 0.22351683339519998 *** 
+
+2020-08-07 18:07:14,705 - run_translator.py[line:93] - INFO: [ Epoch 10: 1/1920 ]
+2020-08-07 18:07:14,706 - run_translator.py[line:98] - INFO:   avg_loss: 2.8269176483154297, acc: 0.248, avg_lr: 2.2e-05, 0.397s
+2020-08-07 18:11:22,403 - run_translator.py[line:93] - INFO: [ Epoch 10: 500/1920 ]
+2020-08-07 18:11:22,404 - run_translator.py[line:98] - INFO:   avg_loss: 2.611674801826477, acc: 0.256, avg_lr: 2.3e-05, 247.698s
+2020-08-07 18:16:05,455 - run_translator.py[line:93] - INFO: [ Epoch 10: 1000/1920 ]
+2020-08-07 18:16:05,455 - run_translator.py[line:98] - INFO:   avg_loss: 2.6035704152584076, acc: 0.242, avg_lr: 2.4e-05, 283.051s
+2020-08-07 18:20:54,665 - run_translator.py[line:93] - INFO: [ Epoch 10: 1500/1920 ]
+2020-08-07 18:20:54,665 - run_translator.py[line:98] - INFO:   avg_loss: 2.5932045369148256, acc: 0.239, avg_lr: 2.4e-05, 289.21s
+2020-08-07 18:25:15,526 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 10, average loss: 2.583181780017912, average acc: 0.23399274366206446 *** 
+
+2020-08-07 18:25:16,286 - run_translator.py[line:93] - INFO: [ Epoch 11: 1/1920 ]
+2020-08-07 18:25:16,286 - run_translator.py[line:98] - INFO:   avg_loss: 2.4964044094085693, acc: 0.247, avg_lr: 2.5e-05, 0.581s
+2020-08-07 18:29:50,266 - run_translator.py[line:93] - INFO: [ Epoch 11: 500/1920 ]
+2020-08-07 18:29:50,266 - run_translator.py[line:98] - INFO:   avg_loss: 2.510279500722885, acc: 0.229, avg_lr: 2.5e-05, 273.98s
+2020-08-07 18:33:59,742 - run_translator.py[line:93] - INFO: [ Epoch 11: 1000/1920 ]
+2020-08-07 18:33:59,742 - run_translator.py[line:98] - INFO:   avg_loss: 2.5038717538118362, acc: 0.223, avg_lr: 2.6e-05, 249.476s
+2020-08-07 18:37:33,856 - run_translator.py[line:93] - INFO: [ Epoch 11: 1500/1920 ]
+2020-08-07 18:37:33,856 - run_translator.py[line:98] - INFO:   avg_loss: 2.5044000340302786, acc: 0.246, avg_lr: 2.7e-05, 214.114s
+2020-08-07 18:40:32,249 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 11, average loss: 2.4972694873188934, average acc: 0.24387533485051907 *** 
+
+2020-08-07 18:40:32,841 - run_translator.py[line:93] - INFO: [ Epoch 12: 1/1920 ]
+2020-08-07 18:40:32,842 - run_translator.py[line:98] - INFO:   avg_loss: 2.588118076324463, acc: 0.287, avg_lr: 2.7e-05, 0.41s
+2020-08-07 18:44:09,389 - run_translator.py[line:93] - INFO: [ Epoch 12: 500/1920 ]
+2020-08-07 18:44:09,389 - run_translator.py[line:98] - INFO:   avg_loss: 2.425241667509079, acc: 0.248, avg_lr: 2.8e-05, 216.548s
+2020-08-07 18:47:45,474 - run_translator.py[line:93] - INFO: [ Epoch 12: 1000/1920 ]
+2020-08-07 18:47:45,475 - run_translator.py[line:98] - INFO:   avg_loss: 2.4283901480436323, acc: 0.284, avg_lr: 2.8e-05, 216.085s
+2020-08-07 18:51:33,328 - run_translator.py[line:93] - INFO: [ Epoch 12: 1500/1920 ]
+2020-08-07 18:51:33,328 - run_translator.py[line:98] - INFO:   avg_loss: 2.4186160833040873, acc: 0.282, avg_lr: 2.9e-05, 227.853s
+2020-08-07 18:54:28,971 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 12, average loss: 2.4162268658479054, average acc: 0.2531742394077861 *** 
+
+2020-08-07 18:54:29,539 - run_translator.py[line:93] - INFO: [ Epoch 13: 1/1920 ]
+2020-08-07 18:54:29,540 - run_translator.py[line:98] - INFO:   avg_loss: 2.453317165374756, acc: 0.262, avg_lr: 3e-05, 0.388s
+2020-08-07 18:58:04,876 - run_translator.py[line:93] - INFO: [ Epoch 13: 500/1920 ]
+2020-08-07 18:58:04,877 - run_translator.py[line:98] - INFO:   avg_loss: 2.3574522976875305, acc: 0.256, avg_lr: 3e-05, 215.337s
+2020-08-07 19:01:38,667 - run_translator.py[line:93] - INFO: [ Epoch 13: 1000/1920 ]
+2020-08-07 19:01:38,667 - run_translator.py[line:98] - INFO:   avg_loss: 2.3515203963518143, acc: 0.226, avg_lr: 3.1e-05, 213.791s
+2020-08-07 19:05:10,114 - run_translator.py[line:93] - INFO: [ Epoch 13: 1500/1920 ]
+2020-08-07 19:05:10,115 - run_translator.py[line:98] - INFO:   avg_loss: 2.3458694818019867, acc: 0.268, avg_lr: 3.1e-05, 211.447s
+2020-08-07 19:08:09,953 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 13, average loss: 2.341698979648451, average acc: 0.26249066540596144 *** 
+
+2020-08-07 19:08:10,538 - run_translator.py[line:93] - INFO: [ Epoch 14: 1/1920 ]
+2020-08-07 19:08:10,538 - run_translator.py[line:98] - INFO:   avg_loss: 2.2140095233917236, acc: 0.248, avg_lr: 3.2e-05, 0.407s
+2020-08-07 19:11:41,112 - run_translator.py[line:93] - INFO: [ Epoch 14: 500/1920 ]
+2020-08-07 19:11:41,112 - run_translator.py[line:98] - INFO:   avg_loss: 2.289323788166046, acc: 0.276, avg_lr: 3.3e-05, 210.573s
+2020-08-07 19:15:12,969 - run_translator.py[line:93] - INFO: [ Epoch 14: 1000/1920 ]
+2020-08-07 19:15:12,969 - run_translator.py[line:98] - INFO:   avg_loss: 2.27951406955719, acc: 0.296, avg_lr: 3.3e-05, 211.857s
+2020-08-07 19:18:46,739 - run_translator.py[line:93] - INFO: [ Epoch 14: 1500/1920 ]
+2020-08-07 19:18:46,739 - run_translator.py[line:98] - INFO:   avg_loss: 2.2786746244430542, acc: 0.258, avg_lr: 3.4e-05, 213.77s
+2020-08-07 19:21:49,641 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 14, average loss: 2.2749066228047012, average acc: 0.2710002097633193 *** 
+
+2020-08-07 19:21:50,236 - run_translator.py[line:93] - INFO: [ Epoch 15: 1/1920 ]
+2020-08-07 19:21:50,236 - run_translator.py[line:98] - INFO:   avg_loss: 2.105081796646118, acc: 0.257, avg_lr: 3.4e-05, 0.418s
+2020-08-07 19:25:18,083 - run_translator.py[line:93] - INFO: [ Epoch 15: 500/1920 ]
+2020-08-07 19:25:18,083 - run_translator.py[line:98] - INFO:   avg_loss: 2.2238386573791504, acc: 0.27, avg_lr: 3.5e-05, 207.846s
+2020-08-07 19:28:58,808 - run_translator.py[line:93] - INFO: [ Epoch 15: 1000/1920 ]
+2020-08-07 19:28:58,808 - run_translator.py[line:98] - INFO:   avg_loss: 2.2181737970113753, acc: 0.289, avg_lr: 3.6e-05, 220.726s
+2020-08-07 19:32:38,103 - run_translator.py[line:93] - INFO: [ Epoch 15: 1500/1920 ]
+2020-08-07 19:32:38,103 - run_translator.py[line:98] - INFO:   avg_loss: 2.2092457372347516, acc: 0.208, avg_lr: 3.6e-05, 219.294s
+2020-08-07 19:35:36,801 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 15, average loss: 2.2103524609158436, average acc: 0.27883821187147234 *** 
+
+2020-08-07 19:35:37,368 - run_translator.py[line:93] - INFO: [ Epoch 16: 1/1920 ]
+2020-08-07 19:35:37,368 - run_translator.py[line:98] - INFO:   avg_loss: 2.3015875816345215, acc: 0.295, avg_lr: 3.7e-05, 0.388s
+2020-08-07 19:39:10,914 - run_translator.py[line:93] - INFO: [ Epoch 16: 500/1920 ]
+2020-08-07 19:39:10,915 - run_translator.py[line:98] - INFO:   avg_loss: 2.149113114118576, acc: 0.261, avg_lr: 3.7e-05, 213.547s
+2020-08-07 19:42:42,427 - run_translator.py[line:93] - INFO: [ Epoch 16: 1000/1920 ]
+2020-08-07 19:42:42,428 - run_translator.py[line:98] - INFO:   avg_loss: 2.153364443540573, acc: 0.289, avg_lr: 3.8e-05, 211.513s
+2020-08-07 19:46:16,548 - run_translator.py[line:93] - INFO: [ Epoch 16: 1500/1920 ]
+2020-08-07 19:46:16,548 - run_translator.py[line:98] - INFO:   avg_loss: 2.1522604339122773, acc: 0.294, avg_lr: 3.8e-05, 214.121s
+2020-08-07 19:49:19,222 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 16, average loss: 2.1495432192459702, average acc: 0.2862132956067843 *** 
+
+2020-08-07 19:49:19,824 - run_translator.py[line:93] - INFO: [ Epoch 17: 1/1920 ]
+2020-08-07 19:49:19,824 - run_translator.py[line:98] - INFO:   avg_loss: 1.964282751083374, acc: 0.259, avg_lr: 3.9e-05, 0.423s
+2020-08-07 19:52:50,369 - run_translator.py[line:93] - INFO: [ Epoch 17: 500/1920 ]
+2020-08-07 19:52:50,369 - run_translator.py[line:98] - INFO:   avg_loss: 2.0950220787525176, acc: 0.34, avg_lr: 4e-05, 210.545s
+2020-08-07 19:56:18,959 - run_translator.py[line:93] - INFO: [ Epoch 17: 1000/1920 ]
+2020-08-07 19:56:18,959 - run_translator.py[line:98] - INFO:   avg_loss: 2.092661227941513, acc: 0.257, avg_lr: 4e-05, 208.59s
+2020-08-07 19:59:56,135 - run_translator.py[line:93] - INFO: [ Epoch 17: 1500/1920 ]
+2020-08-07 19:59:56,135 - run_translator.py[line:98] - INFO:   avg_loss: 2.093479962746302, acc: 0.262, avg_lr: 4.1e-05, 217.176s
+2020-08-07 20:02:58,612 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 17, average loss: 2.0910888580605387, average acc: 0.29319708597006355 *** 
+
+2020-08-07 20:02:59,182 - run_translator.py[line:93] - INFO: [ Epoch 18: 1/1920 ]
+2020-08-07 20:02:59,183 - run_translator.py[line:98] - INFO:   avg_loss: 1.84395432472229, acc: 0.263, avg_lr: 4.1e-05, 0.39s
+2020-08-07 20:06:27,555 - run_translator.py[line:93] - INFO: [ Epoch 18: 500/1920 ]
+2020-08-07 20:06:27,555 - run_translator.py[line:98] - INFO:   avg_loss: 2.023518738746643, acc: 0.264, avg_lr: 4.2e-05, 208.372s
+2020-08-07 20:10:00,755 - run_translator.py[line:93] - INFO: [ Epoch 18: 1000/1920 ]
+2020-08-07 20:10:00,755 - run_translator.py[line:98] - INFO:   avg_loss: 2.037752439856529, acc: 0.339, avg_lr: 4.3e-05, 213.201s
+2020-08-07 20:13:26,089 - run_translator.py[line:93] - INFO: [ Epoch 18: 1500/1920 ]
+2020-08-07 20:13:26,090 - run_translator.py[line:98] - INFO:   avg_loss: 2.033687553246816, acc: 0.302, avg_lr: 4.3e-05, 205.334s
+2020-08-07 20:16:24,452 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 18, average loss: 2.0363413697108625, average acc: 0.30026316023277144 *** 
+
+2020-08-07 20:16:25,166 - run_translator.py[line:93] - INFO: [ Epoch 19: 1/1920 ]
+2020-08-07 20:16:25,167 - run_translator.py[line:98] - INFO:   avg_loss: 2.0431149005889893, acc: 0.323, avg_lr: 4.4e-05, 0.533s
+2020-08-07 20:20:10,997 - run_translator.py[line:93] - INFO: [ Epoch 19: 500/1920 ]
+2020-08-07 20:20:10,997 - run_translator.py[line:98] - INFO:   avg_loss: 1.9940015263557433, acc: 0.292, avg_lr: 4.4e-05, 225.831s
+2020-08-07 20:23:44,894 - run_translator.py[line:93] - INFO: [ Epoch 19: 1000/1920 ]
+2020-08-07 20:23:44,894 - run_translator.py[line:98] - INFO:   avg_loss: 1.986802751302719, acc: 0.322, avg_lr: 4.5e-05, 213.897s
+2020-08-07 20:27:15,577 - run_translator.py[line:93] - INFO: [ Epoch 19: 1500/1920 ]
+2020-08-07 20:27:15,578 - run_translator.py[line:98] - INFO:   avg_loss: 1.9884759481747944, acc: 0.309, avg_lr: 4.6e-05, 210.684s
+2020-08-07 20:30:11,693 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 19, average loss: 1.9842756310477854, average acc: 0.30692991891482174 *** 
+
+2020-08-07 20:30:12,260 - run_translator.py[line:93] - INFO: [ Epoch 20: 1/1920 ]
+2020-08-07 20:30:12,260 - run_translator.py[line:98] - INFO:   avg_loss: 1.799700379371643, acc: 0.333, avg_lr: 4.6e-05, 0.389s
+2020-08-07 20:33:48,409 - run_translator.py[line:93] - INFO: [ Epoch 20: 500/1920 ]
+2020-08-07 20:33:48,409 - run_translator.py[line:98] - INFO:   avg_loss: 1.9294029800891876, acc: 0.293, avg_lr: 4.7e-05, 216.149s
+2020-08-07 20:37:21,471 - run_translator.py[line:93] - INFO: [ Epoch 20: 1000/1920 ]
+2020-08-07 20:37:21,471 - run_translator.py[line:98] - INFO:   avg_loss: 1.9317072359323502, acc: 0.322, avg_lr: 4.7e-05, 213.062s
+2020-08-07 20:41:04,126 - run_translator.py[line:93] - INFO: [ Epoch 20: 1500/1920 ]
+2020-08-07 20:41:04,126 - run_translator.py[line:98] - INFO:   avg_loss: 1.9337951555252075, acc: 0.293, avg_lr: 4.8e-05, 222.655s
+2020-08-07 20:44:00,182 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 20, average loss: 1.933035758137703, average acc: 0.3135141525642334 *** 
+
+2020-08-07 20:44:00,839 - run_translator.py[line:93] - INFO: [ Epoch 21: 1/1920 ]
+2020-08-07 20:44:00,839 - run_translator.py[line:98] - INFO:   avg_loss: 1.9738954305648804, acc: 0.384, avg_lr: 4.9e-05, 0.476s
+2020-08-07 20:47:30,171 - run_translator.py[line:93] - INFO: [ Epoch 21: 500/1920 ]
+2020-08-07 20:47:30,171 - run_translator.py[line:98] - INFO:   avg_loss: 1.8715713019371032, acc: 0.341, avg_lr: 4.9e-05, 209.332s
+2020-08-07 20:51:03,165 - run_translator.py[line:93] - INFO: [ Epoch 21: 1000/1920 ]
+2020-08-07 20:51:03,165 - run_translator.py[line:98] - INFO:   avg_loss: 1.8841593528985978, acc: 0.311, avg_lr: 5e-05, 212.994s
+2020-08-07 20:54:30,215 - run_translator.py[line:93] - INFO: [ Epoch 21: 1500/1920 ]
+2020-08-07 20:54:30,215 - run_translator.py[line:98] - INFO:   avg_loss: 1.8837747733592987, acc: 0.321, avg_lr: 5e-05, 207.05s
+2020-08-07 20:57:25,966 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 21, average loss: 1.884425872315963, average acc: 0.3198256446764075 *** 
+
+2020-08-07 20:57:26,668 - run_translator.py[line:93] - INFO: [ Epoch 22: 1/1920 ]
+2020-08-07 20:57:26,668 - run_translator.py[line:98] - INFO:   avg_loss: 1.8847821950912476, acc: 0.353, avg_lr: 5.1e-05, 0.521s
+2020-08-07 21:00:57,186 - run_translator.py[line:93] - INFO: [ Epoch 22: 500/1920 ]
+2020-08-07 21:00:57,186 - run_translator.py[line:98] - INFO:   avg_loss: 1.828033779144287, acc: 0.315, avg_lr: 5.1e-05, 210.518s
+2020-08-07 21:04:27,247 - run_translator.py[line:93] - INFO: [ Epoch 22: 1000/1920 ]
+2020-08-07 21:04:27,248 - run_translator.py[line:98] - INFO:   avg_loss: 1.832347575068474, acc: 0.302, avg_lr: 5.2e-05, 210.062s
+2020-08-07 21:08:00,359 - run_translator.py[line:93] - INFO: [ Epoch 22: 1500/1920 ]
+2020-08-07 21:08:00,359 - run_translator.py[line:98] - INFO:   avg_loss: 1.8383784828186036, acc: 0.325, avg_lr: 5.3e-05, 213.111s
+2020-08-07 21:11:10,150 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 22, average loss: 1.8355817954987288, average acc: 0.3257004849061546 *** 
+
+2020-08-07 21:11:10,856 - run_translator.py[line:93] - INFO: [ Epoch 23: 1/1920 ]
+2020-08-07 21:11:10,857 - run_translator.py[line:98] - INFO:   avg_loss: 1.662677526473999, acc: 0.35, avg_lr: 5.3e-05, 0.525s
+2020-08-07 21:14:40,969 - run_translator.py[line:93] - INFO: [ Epoch 23: 500/1920 ]
+2020-08-07 21:14:40,970 - run_translator.py[line:98] - INFO:   avg_loss: 1.787209668159485, acc: 0.334, avg_lr: 5.4e-05, 210.113s
+2020-08-07 21:18:20,250 - run_translator.py[line:93] - INFO: [ Epoch 23: 1000/1920 ]
+2020-08-07 21:18:20,250 - run_translator.py[line:98] - INFO:   avg_loss: 1.7879957352876663, acc: 0.353, avg_lr: 5.4e-05, 219.28s
+2020-08-07 21:21:56,847 - run_translator.py[line:93] - INFO: [ Epoch 23: 1500/1920 ]
+2020-08-07 21:21:56,847 - run_translator.py[line:98] - INFO:   avg_loss: 1.784840207894643, acc: 0.324, avg_lr: 5.5e-05, 216.597s
+2020-08-07 21:24:57,843 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 23, average loss: 1.7871216161797443, average acc: 0.33201528036312256 *** 
+
+2020-08-07 21:24:58,585 - run_translator.py[line:93] - INFO: [ Epoch 24: 1/1920 ]
+2020-08-07 21:24:58,585 - run_translator.py[line:98] - INFO:   avg_loss: 1.5797539949417114, acc: 0.322, avg_lr: 5.5e-05, 0.562s
+2020-08-07 21:28:32,379 - run_translator.py[line:93] - INFO: [ Epoch 24: 500/1920 ]
+2020-08-07 21:28:32,379 - run_translator.py[line:98] - INFO:   avg_loss: 1.734140594959259, acc: 0.307, avg_lr: 5.6e-05, 213.794s
+2020-08-07 21:32:20,643 - run_translator.py[line:93] - INFO: [ Epoch 24: 1000/1920 ]
+2020-08-07 21:32:20,644 - run_translator.py[line:98] - INFO:   avg_loss: 1.7380298433303834, acc: 0.291, avg_lr: 5.6e-05, 228.265s
+2020-08-07 21:35:55,650 - run_translator.py[line:93] - INFO: [ Epoch 24: 1500/1920 ]
+2020-08-07 21:35:55,651 - run_translator.py[line:98] - INFO:   avg_loss: 1.7398316637674967, acc: 0.365, avg_lr: 5.6e-05, 215.007s
+2020-08-07 21:38:54,737 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 24, average loss: 1.7423770391071836, average acc: 0.33837566743633396 *** 
+
+2020-08-07 21:38:55,487 - run_translator.py[line:93] - INFO: [ Epoch 25: 1/1920 ]
+2020-08-07 21:38:55,487 - run_translator.py[line:98] - INFO:   avg_loss: 1.9974356889724731, acc: 0.339, avg_lr: 5.7e-05, 0.572s
+2020-08-07 21:42:37,515 - run_translator.py[line:93] - INFO: [ Epoch 25: 500/1920 ]
+2020-08-07 21:42:37,515 - run_translator.py[line:98] - INFO:   avg_loss: 1.6790646643638611, acc: 0.332, avg_lr: 5.7e-05, 222.028s
+2020-08-07 21:46:07,570 - run_translator.py[line:93] - INFO: [ Epoch 25: 1000/1920 ]
+2020-08-07 21:46:07,570 - run_translator.py[line:98] - INFO:   avg_loss: 1.6949304084777832, acc: 0.392, avg_lr: 5.8e-05, 210.055s
+2020-08-07 21:49:45,454 - run_translator.py[line:93] - INFO: [ Epoch 25: 1500/1920 ]
+2020-08-07 21:49:45,454 - run_translator.py[line:98] - INFO:   avg_loss: 1.6974084657828012, acc: 0.326, avg_lr: 5.8e-05, 217.884s
+2020-08-07 21:52:54,420 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 25, average loss: 1.6996408419683575, average acc: 0.34396816644495654 *** 
+
+2020-08-07 21:52:55,005 - run_translator.py[line:93] - INFO: [ Epoch 26: 1/1920 ]
+2020-08-07 21:52:55,005 - run_translator.py[line:98] - INFO:   avg_loss: 1.6160800457000732, acc: 0.35, avg_lr: 5.8e-05, 0.404s
+2020-08-07 21:56:27,130 - run_translator.py[line:93] - INFO: [ Epoch 26: 500/1920 ]
+2020-08-07 21:56:27,130 - run_translator.py[line:98] - INFO:   avg_loss: 1.6356640751361846, acc: 0.355, avg_lr: 5.9e-05, 212.125s
+2020-08-07 22:00:05,882 - run_translator.py[line:93] - INFO: [ Epoch 26: 1000/1920 ]
+2020-08-07 22:00:05,882 - run_translator.py[line:98] - INFO:   avg_loss: 1.649107369184494, acc: 0.351, avg_lr: 5.9e-05, 218.752s
+2020-08-07 22:03:43,780 - run_translator.py[line:93] - INFO: [ Epoch 26: 1500/1920 ]
+2020-08-07 22:03:43,781 - run_translator.py[line:98] - INFO:   avg_loss: 1.6569786075750987, acc: 0.311, avg_lr: 6e-05, 217.898s
+2020-08-07 22:06:41,644 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 26, average loss: 1.6601855169360837, average acc: 0.34896248249980893 *** 
+
+2020-08-07 22:06:42,341 - run_translator.py[line:93] - INFO: [ Epoch 27: 1/1920 ]
+2020-08-07 22:06:42,341 - run_translator.py[line:98] - INFO:   avg_loss: 1.4823952913284302, acc: 0.4, avg_lr: 6e-05, 0.518s
+2020-08-07 22:10:20,357 - run_translator.py[line:93] - INFO: [ Epoch 27: 500/1920 ]
+2020-08-07 22:10:20,357 - run_translator.py[line:98] - INFO:   avg_loss: 1.6141987652778627, acc: 0.365, avg_lr: 6e-05, 218.016s
+2020-08-07 22:13:50,139 - run_translator.py[line:93] - INFO: [ Epoch 27: 1000/1920 ]
+2020-08-07 22:13:50,139 - run_translator.py[line:98] - INFO:   avg_loss: 1.6152725652456283, acc: 0.406, avg_lr: 6.1e-05, 209.782s
+2020-08-07 22:17:28,622 - run_translator.py[line:93] - INFO: [ Epoch 27: 1500/1920 ]
+2020-08-07 22:17:28,622 - run_translator.py[line:98] - INFO:   avg_loss: 1.617494030793508, acc: 0.384, avg_lr: 6.1e-05, 218.483s
+2020-08-07 22:20:29,567 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 27, average loss: 1.6217829194540778, average acc: 0.3543222201558214 *** 
+
+2020-08-07 22:20:30,139 - run_translator.py[line:93] - INFO: [ Epoch 28: 1/1920 ]
+2020-08-07 22:20:30,140 - run_translator.py[line:98] - INFO:   avg_loss: 1.630905270576477, acc: 0.356, avg_lr: 6.1e-05, 0.392s
+2020-08-07 22:24:05,624 - run_translator.py[line:93] - INFO: [ Epoch 28: 500/1920 ]
+2020-08-07 22:24:05,624 - run_translator.py[line:98] - INFO:   avg_loss: 1.5850310595035553, acc: 0.337, avg_lr: 6.1e-05, 215.485s
+2020-08-07 22:27:40,479 - run_translator.py[line:93] - INFO: [ Epoch 28: 1000/1920 ]
+2020-08-07 22:27:40,479 - run_translator.py[line:98] - INFO:   avg_loss: 1.5895105154514313, acc: 0.391, avg_lr: 6.2e-05, 214.855s
+2020-08-07 22:31:17,005 - run_translator.py[line:93] - INFO: [ Epoch 28: 1500/1920 ]
+2020-08-07 22:31:17,005 - run_translator.py[line:98] - INFO:   avg_loss: 1.5897929008801779, acc: 0.357, avg_lr: 6.2e-05, 216.526s
+2020-08-07 22:34:18,703 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 28, average loss: 1.5866092340399822, average acc: 0.3592140095036766 *** 
+
+2020-08-07 22:34:19,296 - run_translator.py[line:93] - INFO: [ Epoch 29: 1/1920 ]
+2020-08-07 22:34:19,296 - run_translator.py[line:98] - INFO:   avg_loss: 1.7134569883346558, acc: 0.369, avg_lr: 6.2e-05, 0.416s
+2020-08-07 22:37:53,185 - run_translator.py[line:93] - INFO: [ Epoch 29: 500/1920 ]
+2020-08-07 22:37:53,185 - run_translator.py[line:98] - INFO:   avg_loss: 1.5381703474521637, acc: 0.343, avg_lr: 6.3e-05, 213.889s
+2020-08-07 22:41:34,314 - run_translator.py[line:93] - INFO: [ Epoch 29: 1000/1920 ]
+2020-08-07 22:41:34,315 - run_translator.py[line:98] - INFO:   avg_loss: 1.548621239542961, acc: 0.343, avg_lr: 6.3e-05, 221.13s
+2020-08-07 22:45:13,783 - run_translator.py[line:93] - INFO: [ Epoch 29: 1500/1920 ]
+2020-08-07 22:45:13,783 - run_translator.py[line:98] - INFO:   avg_loss: 1.549912164290746, acc: 0.371, avg_lr: 6.3e-05, 219.469s
+2020-08-07 22:48:12,360 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 29, average loss: 1.5533414339025815, average acc: 0.36399973020599946 *** 
+
+2020-08-07 22:48:13,045 - run_translator.py[line:93] - INFO: [ Epoch 30: 1/1920 ]
+2020-08-07 22:48:13,045 - run_translator.py[line:98] - INFO:   avg_loss: 1.4328467845916748, acc: 0.386, avg_lr: 6.3e-05, 0.505s
+2020-08-07 22:51:51,041 - run_translator.py[line:93] - INFO: [ Epoch 30: 500/1920 ]
+2020-08-07 22:51:51,042 - run_translator.py[line:98] - INFO:   avg_loss: 1.5123435401916503, acc: 0.352, avg_lr: 6.4e-05, 217.996s
+2020-08-07 22:55:28,183 - run_translator.py[line:93] - INFO: [ Epoch 30: 1000/1920 ]
+2020-08-07 22:55:28,183 - run_translator.py[line:98] - INFO:   avg_loss: 1.5133405832052231, acc: 0.363, avg_lr: 6.4e-05, 217.141s
+2020-08-07 22:59:04,549 - run_translator.py[line:93] - INFO: [ Epoch 30: 1500/1920 ]
+2020-08-07 22:59:04,549 - run_translator.py[line:98] - INFO:   avg_loss: 1.5177155826091766, acc: 0.324, avg_lr: 6.4e-05, 216.366s
+2020-08-07 23:02:10,117 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 30, average loss: 1.5216871334860722, average acc: 0.3681848809097255 *** 
+
+2020-08-07 23:02:10,861 - run_translator.py[line:93] - INFO: [ Epoch 31: 1/1920 ]
+2020-08-07 23:02:10,861 - run_translator.py[line:98] - INFO:   avg_loss: 1.162713885307312, acc: 0.355, avg_lr: 6.4e-05, 0.566s
+2020-08-07 23:05:38,971 - run_translator.py[line:93] - INFO: [ Epoch 31: 500/1920 ]
+2020-08-07 23:05:38,971 - run_translator.py[line:98] - INFO:   avg_loss: 1.4753378021717072, acc: 0.322, avg_lr: 6.5e-05, 208.111s
+2020-08-07 23:09:16,771 - run_translator.py[line:93] - INFO: [ Epoch 31: 1000/1920 ]
+2020-08-07 23:09:16,771 - run_translator.py[line:98] - INFO:   avg_loss: 1.4852714698314666, acc: 0.383, avg_lr: 6.5e-05, 217.8s
+2020-08-07 23:12:51,854 - run_translator.py[line:93] - INFO: [ Epoch 31: 1500/1920 ]
+2020-08-07 23:12:51,855 - run_translator.py[line:98] - INFO:   avg_loss: 1.4923071552117666, acc: 0.405, avg_lr: 6.5e-05, 215.083s
+2020-08-07 23:15:50,769 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 31, average loss: 1.492642368376255, average acc: 0.3723958676979247 *** 
+
+2020-08-07 23:15:51,340 - run_translator.py[line:93] - INFO: [ Epoch 32: 1/1920 ]
+2020-08-07 23:15:51,341 - run_translator.py[line:98] - INFO:   avg_loss: 1.5809738636016846, acc: 0.379, avg_lr: 6.5e-05, 0.392s
+2020-08-07 23:19:33,765 - run_translator.py[line:93] - INFO: [ Epoch 32: 500/1920 ]
+2020-08-07 23:19:33,765 - run_translator.py[line:98] - INFO:   avg_loss: 1.4448997585773469, acc: 0.363, avg_lr: 6.5e-05, 222.425s
+2020-08-07 23:23:21,376 - run_translator.py[line:93] - INFO: [ Epoch 32: 1000/1920 ]
+2020-08-07 23:23:21,377 - run_translator.py[line:98] - INFO:   avg_loss: 1.4541864414215089, acc: 0.379, avg_lr: 6.6e-05, 227.611s
+2020-08-07 23:27:03,897 - run_translator.py[line:93] - INFO: [ Epoch 32: 1500/1920 ]
+2020-08-07 23:27:03,898 - run_translator.py[line:98] - INFO:   avg_loss: 1.458488266468048, acc: 0.397, avg_lr: 6.6e-05, 222.521s
+2020-08-07 23:30:01,097 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 32, average loss: 1.4641746738304695, average acc: 0.3766302466477687 *** 
+
+2020-08-07 23:30:01,818 - run_translator.py[line:93] - INFO: [ Epoch 33: 1/1920 ]
+2020-08-07 23:30:01,818 - run_translator.py[line:98] - INFO:   avg_loss: 1.3897883892059326, acc: 0.378, avg_lr: 6.6e-05, 0.539s
+2020-08-07 23:33:37,300 - run_translator.py[line:93] - INFO: [ Epoch 33: 500/1920 ]
+2020-08-07 23:33:37,300 - run_translator.py[line:98] - INFO:   avg_loss: 1.4135831315517426, acc: 0.349, avg_lr: 6.6e-05, 215.482s
+2020-08-07 23:37:15,264 - run_translator.py[line:93] - INFO: [ Epoch 33: 1000/1920 ]
+2020-08-07 23:37:15,264 - run_translator.py[line:98] - INFO:   avg_loss: 1.4216026793718337, acc: 0.33, avg_lr: 6.6e-05, 217.964s
+2020-08-07 23:40:49,873 - run_translator.py[line:93] - INFO: [ Epoch 33: 1500/1920 ]
+2020-08-07 23:40:49,874 - run_translator.py[line:98] - INFO:   avg_loss: 1.4289858822027843, acc: 0.366, avg_lr: 6.6e-05, 214.61s
+2020-08-07 23:43:52,247 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 33, average loss: 1.4359100791315238, average acc: 0.37976767317014004 *** 
+
+2020-08-07 23:43:52,849 - run_translator.py[line:93] - INFO: [ Epoch 34: 1/1920 ]
+2020-08-07 23:43:52,849 - run_translator.py[line:98] - INFO:   avg_loss: 1.2374567985534668, acc: 0.397, avg_lr: 6.7e-05, 0.423s
+2020-08-07 23:47:30,874 - run_translator.py[line:93] - INFO: [ Epoch 34: 500/1920 ]
+2020-08-07 23:47:30,874 - run_translator.py[line:98] - INFO:   avg_loss: 1.3940088140964508, acc: 0.416, avg_lr: 6.7e-05, 218.025s
+2020-08-07 23:51:08,084 - run_translator.py[line:93] - INFO: [ Epoch 34: 1000/1920 ]
+2020-08-07 23:51:08,084 - run_translator.py[line:98] - INFO:   avg_loss: 1.4006007708311081, acc: 0.362, avg_lr: 6.7e-05, 217.21s
+2020-08-07 23:54:52,791 - run_translator.py[line:93] - INFO: [ Epoch 34: 1500/1920 ]
+2020-08-07 23:54:52,791 - run_translator.py[line:98] - INFO:   avg_loss: 1.4086798757712047, acc: 0.362, avg_lr: 6.7e-05, 224.707s
+2020-08-07 23:57:50,973 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 34, average loss: 1.4107445045374334, average acc: 0.3839569054820855 *** 
+
+2020-08-07 23:57:51,669 - run_translator.py[line:93] - INFO: [ Epoch 35: 1/1920 ]
+2020-08-07 23:57:51,669 - run_translator.py[line:98] - INFO:   avg_loss: 1.2325674295425415, acc: 0.405, avg_lr: 6.7e-05, 0.516s
+2020-08-08 00:01:23,580 - run_translator.py[line:93] - INFO: [ Epoch 35: 500/1920 ]
+2020-08-08 00:01:23,580 - run_translator.py[line:98] - INFO:   avg_loss: 1.370417345404625, acc: 0.427, avg_lr: 6.7e-05, 211.911s
+2020-08-08 00:04:57,277 - run_translator.py[line:93] - INFO: [ Epoch 35: 1000/1920 ]
+2020-08-08 00:04:57,277 - run_translator.py[line:98] - INFO:   avg_loss: 1.3804805703163148, acc: 0.326, avg_lr: 6.8e-05, 213.697s
+2020-08-08 00:08:34,849 - run_translator.py[line:93] - INFO: [ Epoch 35: 1500/1920 ]
+2020-08-08 00:08:34,849 - run_translator.py[line:98] - INFO:   avg_loss: 1.3819851011037827, acc: 0.364, avg_lr: 6.8e-05, 217.572s
+2020-08-08 00:11:32,766 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 35, average loss: 1.3858088440261782, average acc: 0.3869676587404825 *** 
+
+2020-08-08 00:11:33,346 - run_translator.py[line:93] - INFO: [ Epoch 36: 1/1920 ]
+2020-08-08 00:11:33,347 - run_translator.py[line:98] - INFO:   avg_loss: 1.1511077880859375, acc: 0.399, avg_lr: 6.8e-05, 0.401s
+2020-08-08 00:15:06,324 - run_translator.py[line:93] - INFO: [ Epoch 36: 500/1920 ]
+2020-08-08 00:15:06,324 - run_translator.py[line:98] - INFO:   avg_loss: 1.346889528632164, acc: 0.352, avg_lr: 6.8e-05, 212.977s
+2020-08-08 00:18:38,808 - run_translator.py[line:93] - INFO: [ Epoch 36: 1000/1920 ]
+2020-08-08 00:18:38,808 - run_translator.py[line:98] - INFO:   avg_loss: 1.357318390905857, acc: 0.397, avg_lr: 6.8e-05, 212.484s
+2020-08-08 00:22:11,696 - run_translator.py[line:93] - INFO: [ Epoch 36: 1500/1920 ]
+2020-08-08 00:22:11,696 - run_translator.py[line:98] - INFO:   avg_loss: 1.358847727259, acc: 0.417, avg_lr: 6.8e-05, 212.888s
+2020-08-08 00:25:19,316 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 36, average loss: 1.362815940224876, average acc: 0.390853709129531 *** 
+
+2020-08-08 00:25:20,007 - run_translator.py[line:93] - INFO: [ Epoch 37: 1/1920 ]
+2020-08-08 00:25:20,007 - run_translator.py[line:98] - INFO:   avg_loss: 1.5854191780090332, acc: 0.412, avg_lr: 6.8e-05, 0.511s
+2020-08-08 00:29:01,342 - run_translator.py[line:93] - INFO: [ Epoch 37: 500/1920 ]
+2020-08-08 00:29:01,342 - run_translator.py[line:98] - INFO:   avg_loss: 1.3135968915224074, acc: 0.403, avg_lr: 6.8e-05, 221.335s
+2020-08-08 00:32:37,518 - run_translator.py[line:93] - INFO: [ Epoch 37: 1000/1920 ]
+2020-08-08 00:32:37,519 - run_translator.py[line:98] - INFO:   avg_loss: 1.3277402091026307, acc: 0.419, avg_lr: 6.9e-05, 216.176s
+2020-08-08 00:36:09,027 - run_translator.py[line:93] - INFO: [ Epoch 37: 1500/1920 ]
+2020-08-08 00:36:09,027 - run_translator.py[line:98] - INFO:   avg_loss: 1.3346591345469156, acc: 0.44, avg_lr: 6.9e-05, 211.509s
+2020-08-08 00:39:09,737 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 37, average loss: 1.3390946507453918, average acc: 0.3940613369218264 *** 
+
+2020-08-08 00:39:10,317 - run_translator.py[line:93] - INFO: [ Epoch 38: 1/1920 ]
+2020-08-08 00:39:10,317 - run_translator.py[line:98] - INFO:   avg_loss: 1.1126606464385986, acc: 0.393, avg_lr: 6.9e-05, 0.401s
+2020-08-08 00:42:48,431 - run_translator.py[line:93] - INFO: [ Epoch 38: 500/1920 ]
+2020-08-08 00:42:48,431 - run_translator.py[line:98] - INFO:   avg_loss: 1.2869624462127685, acc: 0.383, avg_lr: 6.9e-05, 218.114s
+2020-08-08 00:46:21,793 - run_translator.py[line:93] - INFO: [ Epoch 38: 1000/1920 ]
+2020-08-08 00:46:21,793 - run_translator.py[line:98] - INFO:   avg_loss: 1.2993665511608123, acc: 0.413, avg_lr: 6.9e-05, 213.362s
+2020-08-08 00:49:56,973 - run_translator.py[line:93] - INFO: [ Epoch 38: 1500/1920 ]
+2020-08-08 00:49:56,973 - run_translator.py[line:98] - INFO:   avg_loss: 1.309380304455757, acc: 0.385, avg_lr: 6.9e-05, 215.18s
+2020-08-08 00:52:52,105 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 38, average loss: 1.3176007982964317, average acc: 0.3973419722646015 *** 
+
+2020-08-08 00:52:52,826 - run_translator.py[line:93] - INFO: [ Epoch 39: 1/1920 ]
+2020-08-08 00:52:52,826 - run_translator.py[line:98] - INFO:   avg_loss: 1.4008952379226685, acc: 0.427, avg_lr: 6.9e-05, 0.522s
+2020-08-08 00:56:21,597 - run_translator.py[line:93] - INFO: [ Epoch 39: 500/1920 ]
+2020-08-08 00:56:21,597 - run_translator.py[line:98] - INFO:   avg_loss: 1.2767673785686493, acc: 0.415, avg_lr: 6.9e-05, 208.772s
+2020-08-08 00:59:52,201 - run_translator.py[line:93] - INFO: [ Epoch 39: 1000/1920 ]
+2020-08-08 00:59:52,201 - run_translator.py[line:98] - INFO:   avg_loss: 1.2865644760727883, acc: 0.439, avg_lr: 6.9e-05, 210.604s
+2020-08-08 01:03:26,345 - run_translator.py[line:93] - INFO: [ Epoch 39: 1500/1920 ]
+2020-08-08 01:03:26,345 - run_translator.py[line:98] - INFO:   avg_loss: 1.2909488179286321, acc: 0.394, avg_lr: 6.9e-05, 214.144s
+2020-08-08 01:06:23,887 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 39, average loss: 1.2968008272349834, average acc: 0.40032163066721854 *** 
+
+2020-08-08 01:06:24,471 - run_translator.py[line:93] - INFO: [ Epoch 40: 1/1920 ]
+2020-08-08 01:06:24,471 - run_translator.py[line:98] - INFO:   avg_loss: 1.3445320129394531, acc: 0.405, avg_lr: 7e-05, 0.406s
+2020-08-08 01:09:55,855 - run_translator.py[line:93] - INFO: [ Epoch 40: 500/1920 ]
+2020-08-08 01:09:55,855 - run_translator.py[line:98] - INFO:   avg_loss: 1.2629362970590592, acc: 0.415, avg_lr: 7e-05, 211.384s
+2020-08-08 01:13:25,699 - run_translator.py[line:93] - INFO: [ Epoch 40: 1000/1920 ]
+2020-08-08 01:13:25,699 - run_translator.py[line:98] - INFO:   avg_loss: 1.263339019536972, acc: 0.461, avg_lr: 7e-05, 209.844s
+2020-08-08 01:16:55,271 - run_translator.py[line:93] - INFO: [ Epoch 40: 1500/1920 ]
+2020-08-08 01:16:55,271 - run_translator.py[line:98] - INFO:   avg_loss: 1.270777935743332, acc: 0.417, avg_lr: 7e-05, 209.572s
+2020-08-08 01:19:54,620 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 40, average loss: 1.2768619382753967, average acc: 0.40346256600870506 *** 
+
+2020-08-08 01:19:55,204 - run_translator.py[line:93] - INFO: [ Epoch 41: 1/1920 ]
+2020-08-08 01:19:55,205 - run_translator.py[line:98] - INFO:   avg_loss: 1.274157166481018, acc: 0.39, avg_lr: 7e-05, 0.406s
+2020-08-08 01:23:27,165 - run_translator.py[line:93] - INFO: [ Epoch 41: 500/1920 ]
+2020-08-08 01:23:27,165 - run_translator.py[line:98] - INFO:   avg_loss: 1.2354700262546539, acc: 0.385, avg_lr: 7e-05, 211.961s
+2020-08-08 01:27:01,411 - run_translator.py[line:93] - INFO: [ Epoch 41: 1000/1920 ]
+2020-08-08 01:27:01,412 - run_translator.py[line:98] - INFO:   avg_loss: 1.246062978863716, acc: 0.393, avg_lr: 7e-05, 214.246s
+2020-08-08 01:30:40,697 - run_translator.py[line:93] - INFO: [ Epoch 41: 1500/1920 ]
+2020-08-08 01:30:40,698 - run_translator.py[line:98] - INFO:   avg_loss: 1.2529142026901245, acc: 0.421, avg_lr: 7e-05, 219.286s
+2020-08-08 01:33:40,216 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 41, average loss: 1.2581428905948997, average acc: 0.406126967057651 *** 
+
+2020-08-08 01:33:40,798 - run_translator.py[line:93] - INFO: [ Epoch 42: 1/1920 ]
+2020-08-08 01:33:40,798 - run_translator.py[line:98] - INFO:   avg_loss: 1.2173138856887817, acc: 0.447, avg_lr: 7e-05, 0.402s
+2020-08-08 01:37:15,371 - run_translator.py[line:93] - INFO: [ Epoch 42: 500/1920 ]
+2020-08-08 01:37:15,371 - run_translator.py[line:98] - INFO:   avg_loss: 1.215525210738182, acc: 0.41, avg_lr: 7e-05, 214.573s
+2020-08-08 01:40:54,650 - run_translator.py[line:93] - INFO: [ Epoch 42: 1000/1920 ]
+2020-08-08 01:40:54,650 - run_translator.py[line:98] - INFO:   avg_loss: 1.2218537811636925, acc: 0.407, avg_lr: 7e-05, 219.279s
+2020-08-08 01:44:25,416 - run_translator.py[line:93] - INFO: [ Epoch 42: 1500/1920 ]
+2020-08-08 01:44:25,416 - run_translator.py[line:98] - INFO:   avg_loss: 1.2303517635265986, acc: 0.356, avg_lr: 7e-05, 210.766s
+2020-08-08 01:47:23,939 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 42, average loss: 1.2377371421083807, average acc: 0.4092011474390608 *** 
+
+2020-08-08 01:47:24,604 - run_translator.py[line:93] - INFO: [ Epoch 43: 1/1920 ]
+2020-08-08 01:47:24,604 - run_translator.py[line:98] - INFO:   avg_loss: 1.3068798780441284, acc: 0.474, avg_lr: 7e-05, 0.486s
+2020-08-08 01:50:57,805 - run_translator.py[line:93] - INFO: [ Epoch 43: 500/1920 ]
+2020-08-08 01:50:57,805 - run_translator.py[line:98] - INFO:   avg_loss: 1.2108102546930313, acc: 0.463, avg_lr: 7e-05, 213.201s
+2020-08-08 01:54:31,052 - run_translator.py[line:93] - INFO: [ Epoch 43: 1000/1920 ]
+2020-08-08 01:54:31,052 - run_translator.py[line:98] - INFO:   avg_loss: 1.2138679275512696, acc: 0.392, avg_lr: 7e-05, 213.247s
+2020-08-08 01:58:05,132 - run_translator.py[line:93] - INFO: [ Epoch 43: 1500/1920 ]
+2020-08-08 01:58:05,132 - run_translator.py[line:98] - INFO:   avg_loss: 1.2154436592260998, acc: 0.422, avg_lr: 7.1e-05, 214.08s
+2020-08-08 02:01:09,697 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 43, average loss: 1.2213626361141603, average acc: 0.4117443952422633 *** 
+
+2020-08-08 02:01:10,264 - run_translator.py[line:93] - INFO: [ Epoch 44: 1/1920 ]
+2020-08-08 02:01:10,264 - run_translator.py[line:98] - INFO:   avg_loss: 0.9899314045906067, acc: 0.438, avg_lr: 7.1e-05, 0.389s
+2020-08-08 02:04:41,294 - run_translator.py[line:93] - INFO: [ Epoch 44: 500/1920 ]
+2020-08-08 02:04:41,295 - run_translator.py[line:98] - INFO:   avg_loss: 1.182984638094902, acc: 0.342, avg_lr: 7.1e-05, 211.031s
+2020-08-08 02:08:15,792 - run_translator.py[line:93] - INFO: [ Epoch 44: 1000/1920 ]
+2020-08-08 02:08:15,792 - run_translator.py[line:98] - INFO:   avg_loss: 1.1899440345168113, acc: 0.424, avg_lr: 7.1e-05, 214.498s
+2020-08-08 02:11:49,610 - run_translator.py[line:93] - INFO: [ Epoch 44: 1500/1920 ]
+2020-08-08 02:11:49,610 - run_translator.py[line:98] - INFO:   avg_loss: 1.1981107674837113, acc: 0.402, avg_lr: 7.1e-05, 213.818s
+2020-08-08 02:14:47,560 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 44, average loss: 1.2031861499572793, average acc: 0.4140478308004235 *** 
+
+2020-08-08 02:14:48,752 - run_translator.py[line:93] - INFO: [ Epoch 45: 1/1920 ]
+2020-08-08 02:14:48,752 - run_translator.py[line:98] - INFO:   avg_loss: 1.1205661296844482, acc: 0.465, avg_lr: 7.1e-05, 0.393s
+2020-08-08 02:18:23,764 - run_translator.py[line:93] - INFO: [ Epoch 45: 500/1920 ]
+2020-08-08 02:18:23,764 - run_translator.py[line:98] - INFO:   avg_loss: 1.1646740818023682, acc: 0.413, avg_lr: 7.1e-05, 215.012s
+2020-08-08 02:22:04,929 - run_translator.py[line:93] - INFO: [ Epoch 45: 1000/1920 ]
+2020-08-08 02:22:04,929 - run_translator.py[line:98] - INFO:   avg_loss: 1.1737049276232718, acc: 0.424, avg_lr: 7.1e-05, 221.165s
+2020-08-08 02:25:48,689 - run_translator.py[line:93] - INFO: [ Epoch 45: 1500/1920 ]
+2020-08-08 02:25:48,689 - run_translator.py[line:98] - INFO:   avg_loss: 1.180807432015737, acc: 0.395, avg_lr: 7.1e-05, 223.76s
+2020-08-08 02:28:45,354 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 45, average loss: 1.1861780795268715, average acc: 0.4165258885079562 *** 
+
+2020-08-08 02:28:45,932 - run_translator.py[line:93] - INFO: [ Epoch 46: 1/1920 ]
+2020-08-08 02:28:45,932 - run_translator.py[line:98] - INFO:   avg_loss: 1.0455458164215088, acc: 0.431, avg_lr: 7.1e-05, 0.399s
+2020-08-08 02:32:19,696 - run_translator.py[line:93] - INFO: [ Epoch 46: 500/1920 ]
+2020-08-08 02:32:19,696 - run_translator.py[line:98] - INFO:   avg_loss: 1.1461562261581422, acc: 0.387, avg_lr: 7.1e-05, 213.764s
+2020-08-08 02:35:45,214 - run_translator.py[line:93] - INFO: [ Epoch 46: 1000/1920 ]
+2020-08-08 02:35:45,215 - run_translator.py[line:98] - INFO:   avg_loss: 1.1555136747956276, acc: 0.406, avg_lr: 7.1e-05, 205.519s
+2020-08-08 02:39:21,018 - run_translator.py[line:93] - INFO: [ Epoch 46: 1500/1920 ]
+2020-08-08 02:39:21,019 - run_translator.py[line:98] - INFO:   avg_loss: 1.1659400012493133, acc: 0.347, avg_lr: 7.1e-05, 215.804s
+2020-08-08 02:42:24,743 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 46, average loss: 1.1712068197627863, average acc: 0.4186242074481911 *** 
+
+2020-08-08 02:42:25,308 - run_translator.py[line:93] - INFO: [ Epoch 47: 1/1920 ]
+2020-08-08 02:42:25,308 - run_translator.py[line:98] - INFO:   avg_loss: 0.921294093132019, acc: 0.373, avg_lr: 7.1e-05, 0.385s
+2020-08-08 02:45:57,658 - run_translator.py[line:93] - INFO: [ Epoch 47: 500/1920 ]
+2020-08-08 02:45:57,658 - run_translator.py[line:98] - INFO:   avg_loss: 1.1310277485847473, acc: 0.429, avg_lr: 7.1e-05, 212.35s
+2020-08-08 02:49:30,614 - run_translator.py[line:93] - INFO: [ Epoch 47: 1000/1920 ]
+2020-08-08 02:49:30,614 - run_translator.py[line:98] - INFO:   avg_loss: 1.1401299329996109, acc: 0.38, avg_lr: 7.1e-05, 212.956s
+2020-08-08 02:53:03,205 - run_translator.py[line:93] - INFO: [ Epoch 47: 1500/1920 ]
+2020-08-08 02:53:03,206 - run_translator.py[line:98] - INFO:   avg_loss: 1.1487313007513682, acc: 0.474, avg_lr: 7.1e-05, 212.591s
+2020-08-08 02:56:09,457 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 47, average loss: 1.1545853414883216, average acc: 0.4215941498249647 *** 
+
+2020-08-08 02:56:10,044 - run_translator.py[line:93] - INFO: [ Epoch 48: 1/1920 ]
+2020-08-08 02:56:10,044 - run_translator.py[line:98] - INFO:   avg_loss: 1.0465633869171143, acc: 0.481, avg_lr: 7.1e-05, 0.404s
+2020-08-08 02:59:35,277 - run_translator.py[line:93] - INFO: [ Epoch 48: 500/1920 ]
+2020-08-08 02:59:35,277 - run_translator.py[line:98] - INFO:   avg_loss: 1.1168450396060943, acc: 0.442, avg_lr: 7.1e-05, 205.233s
+2020-08-08 03:03:10,528 - run_translator.py[line:93] - INFO: [ Epoch 48: 1000/1920 ]
+2020-08-08 03:03:10,528 - run_translator.py[line:98] - INFO:   avg_loss: 1.1273943529725075, acc: 0.426, avg_lr: 7.1e-05, 215.251s
+2020-08-08 03:06:36,433 - run_translator.py[line:93] - INFO: [ Epoch 48: 1500/1920 ]
+2020-08-08 03:06:36,433 - run_translator.py[line:98] - INFO:   avg_loss: 1.1316307742993037, acc: 0.461, avg_lr: 7.1e-05, 205.905s
+2020-08-08 03:09:43,413 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 48, average loss: 1.1399088868871332, average acc: 0.4236140852437507 *** 
+
+2020-08-08 03:09:44,097 - run_translator.py[line:93] - INFO: [ Epoch 49: 1/1920 ]
+2020-08-08 03:09:44,097 - run_translator.py[line:98] - INFO:   avg_loss: 1.0960034132003784, acc: 0.457, avg_lr: 7.1e-05, 0.506s
+2020-08-08 03:13:18,224 - run_translator.py[line:93] - INFO: [ Epoch 49: 500/1920 ]
+2020-08-08 03:13:18,224 - run_translator.py[line:98] - INFO:   avg_loss: 1.1111374434232713, acc: 0.406, avg_lr: 7.1e-05, 214.127s
+2020-08-08 03:16:51,508 - run_translator.py[line:93] - INFO: [ Epoch 49: 1000/1920 ]
+2020-08-08 03:16:51,508 - run_translator.py[line:98] - INFO:   avg_loss: 1.1153011332154275, acc: 0.452, avg_lr: 7.1e-05, 213.284s
+2020-08-08 03:20:25,211 - run_translator.py[line:93] - INFO: [ Epoch 49: 1500/1920 ]
+2020-08-08 03:20:25,212 - run_translator.py[line:98] - INFO:   avg_loss: 1.1197980133692425, acc: 0.342, avg_lr: 7.1e-05, 213.704s
+2020-08-08 03:23:22,759 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 49, average loss: 1.125078981059293, average acc: 0.42596340953884454 *** 
+
+2020-08-08 03:23:23,346 - run_translator.py[line:93] - INFO: [ Epoch 50: 1/1920 ]
+2020-08-08 03:23:23,346 - run_translator.py[line:98] - INFO:   avg_loss: 0.8768458366394043, acc: 0.436, avg_lr: 7.1e-05, 0.408s
+2020-08-08 03:26:59,502 - run_translator.py[line:93] - INFO: [ Epoch 50: 500/1920 ]
+2020-08-08 03:26:59,502 - run_translator.py[line:98] - INFO:   avg_loss: 1.0929195903539657, acc: 0.414, avg_lr: 7.1e-05, 216.156s
+2020-08-08 03:30:30,929 - run_translator.py[line:93] - INFO: [ Epoch 50: 1000/1920 ]
+2020-08-08 03:30:30,929 - run_translator.py[line:98] - INFO:   avg_loss: 1.0988359582424163, acc: 0.433, avg_lr: 7.1e-05, 211.427s
+2020-08-08 03:33:59,346 - run_translator.py[line:93] - INFO: [ Epoch 50: 1500/1920 ]
+2020-08-08 03:33:59,346 - run_translator.py[line:98] - INFO:   avg_loss: 1.1063071157534916, acc: 0.441, avg_lr: 7.1e-05, 208.417s
+2020-08-08 03:37:08,066 - run_translator.py[line:104] - INFO: 
+ *** In Epoch 50, average loss: 1.1104183256315687, average acc: 0.4284479486566797 *** 
+
+Traceback (most recent call last):
+  File "run_translator.py", line 312, in <module>
+    main()
+  File "run_translator.py", line 243, in main
+    do_filter=False)
+  File "/tmp/wyd_tmp/Transformer/datasets.py", line 113, in __init__
+    examples = self.processor.get_examples()
+  File "/tmp/wyd_tmp/Transformer/datasets.py", line 63, in get_examples
+    raise Exception(' No Such Mode. ')
+Exception:  No Such Mode. 
