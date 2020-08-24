@@ -15,15 +15,19 @@ parser.add_argument('--mode', type=str, default='predict', help='run model train
 parser.add_argument('--train', type=bool, default=True, help='if_training')
 parser.add_argument('--eval', type=bool, default=True, help='if_validating')
 parser.add_argument('--train_batch_size', default=20, type=int, required=True, help='训练batch size')
-parser.add_argument('--num_epoch', default=10, type=int, required=True, help='训练epoch')
-parser.add_argument('--stride', default=768, type=int, required=True, help='sample步长')
-parser.add_argument('--min_length', default=0, type=int, required=True, help='限制每篇被选取的文章的最短长度')
-parser.add_argument('--lr', default=1e-5, type=float, required=True, help='基准学习率')
-parser.add_argument('--warmup_step', default=2000, type=int, required=True, help='warmup步数')
-parser.add_argument('--max_grad_norm', default=1.0, type=float, required=True, help='限制梯度最大值')
-parser.add_argument('--data_dir', default='./data', type=str, required=True, help='训练数据保存文件夹')
-parser.add_argument('--output_dir', default='./models', type=str, required=True, help='输出模型的保存路径')
-parser.add_argument('--tokenizer_vocab', default='./vocab/vocab_small.txt', type=str, required=True, help='词典文件')
+parser.add_argument('--num_epoch', default=10, type=int, help='训练epoch')
+parser.add_argument('--stride', default=768, type=int, help='sample步长')
+parser.add_argument('--min_length', default=0, type=int, help='限制每篇被选取的文章的最短长度')
+parser.add_argument('--lr', default=1.5e-4, type=float, help='基准学习率')
+parser.add_argument('--warmup_step', default=2000, type=int, help='warmup步数')
+parser.add_argument('--max_grad_norm', default=1.0, type=float, help='限制梯度最大值')
+parser.add_argument('--data_dir', default='./data', type=str, help='训练数据保存文件夹')
+parser.add_argument('--output_dir', default='./models', type=str, help='输出模型的保存路径')
+parser.add_argument('--pretrained_model_dir', default=r'E:\NLP_Projects\Models\GPT2\GPT2',
+                    type=str, help='预训练模型文件路径')
+parser.add_argument('--model_from_pretrained', type=bool, default=False, help='是否加载预训练文件')
+parser.add_argument('--pretrained_epoch', type=int, default=15, help='预训练模型的轮数')
+parser.add_argument('--tokenizer_vocab', default='./vocab/vocab_small.txt', type=str, help='词典文件')
 parser.add_argument('--bert_tokenizer_dir', default=r'E:\NLP_Projects\Models\Bert_Pretrained\Chinese\Bert_Tokenizer',
                     type=str, help='BertTokenizer, 21128字典的文件夹路径')
 args = parser.parse_args()
@@ -54,13 +58,17 @@ def get_device():
     return device
 
 
-def get_model(model_config, pretrained=False, pretrained_model=None):
-    if not pretrained:
+def get_model(model_config):
+    if not args.model_from_pretrained:
         # 从零训练
+        logging.info(' --- Run Training From Beginning --- ')
         model = transformers.modeling_gpt2.GPT2LMHeadModel(config=model_config)
     else:
         # 基于预训练模型训练
-        model = transformers.modeling_gpt2.GPT2LMHeadModel.from_pretrained(pretrained_model)
+        logging.info(' --- Run Training From Epoch {} --- '.format(args.pretrained_epoch))
+        model = transformers.modeling_gpt2.GPT2LMHeadModel.from_pretrained(
+            os.path.join(args.pretrained_model_dir,
+                         'model_epoch_{}'.format(args.pretrained_epoch)))
     return model
 
 
@@ -113,7 +121,7 @@ def train(dataloader, model, device, total_steps=None):
         logging.info('Saving model for epoch {}'.format(epoch + 1))
         if not os.path.exists(args.output_dir):
             os.mkdir(args.output_dir)
-        epoch_model_dir = os.path.join(args.output_dir, 'model_epoch_{}'.format(epoch + 1))
+        epoch_model_dir = os.path.join(args.output_dir, 'model_epoch_{}'.format(epoch + 1 + args.pretrained_epoch))
         if not os.path.exists(epoch_model_dir):
             os.mkdir(epoch_model_dir)
         model_to_save = model.module if hasattr(model, 'module') else model
@@ -127,6 +135,9 @@ def main():
     assert tokenizer.vocab_size == model_config.vocab_size
     model = get_model(model_config)
     model.to(device)
+
+    trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    logging.info(' Trainable Parameters : {} *** '.format(trainable))
 
     if args.train:
         processor = datasets.PoetDataProcessor(data_dir=args.data_dir,

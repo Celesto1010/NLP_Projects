@@ -7,6 +7,7 @@ from transformers import GPT2LMHeadModel, BertTokenizer
 
 
 def is_word(word):
+    """ 判断一句话是否全是标准英文字符 """
     for item in list(word):
         if item not in 'qwertyuiopasdfghjklzxcvbnm':
             return False
@@ -14,7 +15,7 @@ def is_word(word):
 
 
 def _is_chinese_char(char):
-    """Checks whether CP is the codepoint of a CJK character."""
+    """ 判断字符是否是标准中文字符 """
     # This defines a "chinese character" as anything in the CJK Unicode block:
     #   https://en.wikipedia.org/wiki/CJK_Unified_Ideographs_(Unicode_block)
     #
@@ -24,27 +25,23 @@ def _is_chinese_char(char):
     # space-separated words, so they are not treated specially and handled
     # like the all of the other languages.
     cp = ord(char)
-    if ((cp >= 0x4E00 and cp <= 0x9FFF) or  #
-            (cp >= 0x3400 and cp <= 0x4DBF) or  #
-            (cp >= 0x20000 and cp <= 0x2A6DF) or  #
-            (cp >= 0x2A700 and cp <= 0x2B73F) or  #
-            (cp >= 0x2B740 and cp <= 0x2B81F) or  #
-            (cp >= 0x2B820 and cp <= 0x2CEAF) or
-            (cp >= 0xF900 and cp <= 0xFAFF) or  #
-            (cp >= 0x2F800 and cp <= 0x2FA1F)):  #
+    if ((0x4E00 <= cp <= 0x9FFF) or  #
+            (0x3400 <= cp <= 0x4DBF) or  #
+            (0x20000 <= cp <= 0x2A6DF) or  #
+            (0x2A700 <= cp <= 0x2B73F) or  #
+            (0x2B740 <= cp <= 0x2B81F) or  #
+            (0x2B820 <= cp <= 0x2CEAF) or
+            (0xF900 <= cp <= 0xFAFF) or  #
+            (0x2F800 <= cp <= 0x2FA1F)):  #
         return True
 
     return False
 
 
 def top_k_top_p_filtering(logits, top_k=0, top_p=0.0, filter_value=-float('Inf')):
-    """ Filter a distribution of logits using top-k and/or nucleus (top-p) filtering
-        Args:
-            logits: logits distribution shape (vocabulary size)
-            top_k > 0: keep only top k tokens with highest probability (top-k filtering).
-            top_p > 0.0: keep the top tokens with cumulative probability >= top_p (nucleus filtering).
-                Nucleus filtering is described in Holtzman et al. (http://arxiv.org/abs/1904.09751)
-        From: https://gist.github.com/thomwolf/1a5a29f6962089e871b94cbd09daf317
+    """ 使用top-k或top-p模式，确定下一个字
+        top-k: 概率最大的k个字
+        top-p:
     """
     assert logits.dim() == 1  # batch size 1 for now - could be updated for more but the code would be less clear
     top_k = min(top_k, logits.size(-1))  # Safety check
@@ -132,8 +129,9 @@ def main():
     parser.add_argument('--topp', default=0, type=float, required=False, help='最高积累概率')
     parser.add_argument('--model_config', default='config/model_config_small.json', type=str, required=False,
                         help='模型参数')
-    parser.add_argument('--tokenizer_path', default='cache/vocab_small.txt', type=str, required=False, help='词表路径')
-    parser.add_argument('--model_path', default=r'E:\NLP_Projects\Models\GPT2\GPT2\modelsmodel_epoch8', type=str, required=False, help='模型路径')
+    parser.add_argument('--tokenizer_path', default='vocab/vocab_small.txt', type=str, required=False, help='词表路径')
+    parser.add_argument('--model_path', default=r'E:\NLP_Projects\Models\GPT2\GPT2', type=str, required=False, help='模型路径')
+    parser.add_argument('--model_dir', default='model_epoch_15', type=str, required=False, help='模型路径')
     parser.add_argument('--prefix', default='床前明月光', type=str, required=False, help='生成文章的开头')
     parser.add_argument('--no_wordpiece', action='store_true', help='不做word piece切词')
     parser.add_argument('--segment', action='store_true', help='中文以词为单位')
@@ -157,7 +155,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     tokenizer = BertTokenizer(vocab_file=args.tokenizer_path)
-    model = GPT2LMHeadModel.from_pretrained(args.model_path)
+    model = GPT2LMHeadModel.from_pretrained(os.path.join(args.model_path, args.model_dir))
     model.to(device)
     model.eval()
 
