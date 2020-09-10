@@ -6,14 +6,15 @@ import torch
 import os
 from datetime import datetime
 import argparse
+import ast
 
 logging.basicConfig(format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s',
                     level=logging.INFO)
 
 parser = argparse.ArgumentParser(description='variables for torch classification')
 parser.add_argument('--mode', type=str, default='predict', help='run model training or run prediction')
-parser.add_argument('--train', type=bool, default=True, help='if_training')
-parser.add_argument('--eval', type=bool, default=True, help='if_validating')
+parser.add_argument('--train', type=ast.literal_eval, default=True, help='if_training')
+parser.add_argument('--eval', type=ast.literal_eval, default=True, help='if_validating')
 parser.add_argument('--train_batch_size', default=20, type=int, required=True, help='训练batch size')
 parser.add_argument('--num_epoch', default=10, type=int, help='训练epoch')
 parser.add_argument('--stride', default=768, type=int, help='sample步长')
@@ -21,12 +22,13 @@ parser.add_argument('--min_length', default=0, type=int, help='限制每篇被�
 parser.add_argument('--lr', default=1.5e-4, type=float, help='基准学习率')
 parser.add_argument('--warmup_step', default=2000, type=int, help='warmup步数')
 parser.add_argument('--max_grad_norm', default=1.0, type=float, help='限制梯度最大值')
+parser.add_argument('--data_processor', default='p_five', type=str, help='训练什么类型的文章')
 parser.add_argument('--data_dir', default='./data', type=str, help='训练数据保存文件夹')
 parser.add_argument('--output_dir', default='./models', type=str, help='输出模型的保存路径')
 parser.add_argument('--pretrained_model_dir', default=r'E:\NLP_Projects\Models\GPT2\GPT2',
                     type=str, help='预训练模型文件路径')
-parser.add_argument('--model_from_pretrained', type=bool, default=False, help='是否加载预训练文件')
-parser.add_argument('--pretrained_epoch', type=int, default=15, help='预训练模型的轮数')
+parser.add_argument('--model_from_pretrained', type=ast.literal_eval, default=False, help='是否加载预训练文件')
+parser.add_argument('--pretrained_epoch', type=int, default=0, help='预训练模型的轮数')
 parser.add_argument('--tokenizer_vocab', default='./vocab/vocab_small.txt', type=str, help='词典文件')
 parser.add_argument('--bert_tokenizer_dir', default=r'E:\NLP_Projects\Models\Bert_Pretrained\Chinese\Bert_Tokenizer',
                     type=str, help='BertTokenizer, 21128字典的文件夹路径')
@@ -50,6 +52,8 @@ def get_tokenizer(file_config=None, use_vocab=False):
         tokenizer = transformers.BertTokenizer.from_pretrained(file_config.bert_tokenizer_dir)
     logging.info('字典大小：{}'.format(len(tokenizer)))
     return tokenizer
+
+transformers.BertForTokenClassification
 
 
 def get_device():
@@ -140,10 +144,17 @@ def main():
     logging.info(' Trainable Parameters : {} *** '.format(trainable))
 
     if args.train:
-        processor = datasets.PoetDataProcessor(data_dir=args.data_dir,
-                                               mode='train')
+        if args.data_processor == 'p_five':
+            processor = datasets.PoetDataProcessor(data_dir=args.data_dir,
+                                                   mode='train')
+        elif args.data_processor == 'p_seven':
+            processor = datasets.PoetSevenDataProcessor(data_dir=args.data_dir,
+                                                        mode='train')
+        elif args.data_processor == 'novel':
+            processor = datasets.NovelDataProcessor()
+        else:
+            raise Exception(' !!! No Such Data Mode !!! ')
         dataset = datasets.GPT2Dataset(data_processor=processor,
-                                       mode='train',
                                        tokenizer=tokenizer,
                                        n_ctx=model_config.n_ctx,
                                        stride=args.stride,

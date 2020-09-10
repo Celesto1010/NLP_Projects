@@ -52,6 +52,34 @@ class PoetDataProcessor(object):
         return examples
 
 
+class PoetSevenDataProcessor(object):
+    """ 诗歌的数据预处理类，加载数据 """
+    def __init__(self, data_dir, mode):
+        self.data_dir = data_dir
+        self.mode = mode
+
+    @staticmethod
+    def _create_example(input_file):
+        examples = []
+        with open(input_file, 'r', encoding='utf8') as f:
+            logging.info(' ------- Reading Poets ------- ')
+            # 这里lines的每一个元素均为一首诗。
+            lines = json.load(f)
+            # 若原文中有换行符，则用[SEP]替换
+            for index, line in enumerate(lines):
+                examples.append(InputExample(guid=index, text=line.replace('\n', ' [SEP] ')))
+        return examples
+
+    def get_examples(self):
+        if self.mode == 'train':
+            examples = self._create_example(os.path.join(self.data_dir, 'train_seven.json'))
+        elif self.mode == 'eval':
+            examples = self._create_example(os.path.join(self.data_dir, 'eval_seven.json'))
+        else:
+            raise Exception(' No Such Mode. ')
+        return examples
+
+
 class NovelDataProcessor(object):
     """ 小说的数据预处理类，加载数据 """
 
@@ -82,7 +110,7 @@ def convert_examples_to_features(examples, tokenizer, min_length):
 
 
 class GPT2Dataset(Dataset):
-    def __init__(self, data_processor, mode, tokenizer, n_ctx=1024, stride=768, min_length=0):
+    def __init__(self, data_processor, tokenizer, n_ctx=1024, stride=768, min_length=0):
         self.processor = data_processor
         self.n_ctx = n_ctx
         self.stride = stride
@@ -127,7 +155,7 @@ if __name__ == '__main__':
     proc = PoetDataProcessor(data_dir='./data', mode='train')
     tokenizer = transformers.BertTokenizer.from_pretrained(
         r'E:\NLP_Projects\Models\Bert_Pretrained\Chinese\Bert_Tokenizer')
-    data = GPT2Dataset(proc, tokenizer=tokenizer, mode='train')
+    data = GPT2Dataset(proc, tokenizer=tokenizer)
 
     print(data[0])
     print(data.full_ids[:1024])
